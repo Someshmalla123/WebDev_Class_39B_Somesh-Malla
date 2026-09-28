@@ -1,0 +1,376 @@
+body {
+    background-color: #0b0b0d;
+    color: #f3e6c8;
+    font-family: Georgia, serif;
+    margin: 10px;
+    padding: 25px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.site {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #171719;
+    border: 1px solid #8f742e;
+    border-radius: 18px;
+    box-shadow: 0 0 35px rgba(212, 175, 55);
+}
+
+header {
+    text-align: center;
+    padding: 65px 20px 40px;
+    color: #f8f5ee;
+
+    background:
+        radial-gradient(
+            ellipse at top,
+            #493819 0%,
+            #211a10 32%,
+            #0b0b0d 75%
+        );
+
+    border-bottom: 2px solid #d4af37;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px 30px;
+}
+
+nav a {
+    color: #f8f5ee;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+header h1 {
+    margin: 0;
+    color: #d4af37;
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+header h2 {
+    margin: 8px 0 15px;
+    color: #f3e6c8;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.tagline {
+    color: #d4af37;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 28px;
+}
+
+#introduction {
+    padding: 40px 7%;
+}
+
+#introduction h2 {
+    color: #d4af37;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#introduction p {
+    color: #e7dfd0;
+    font-size: 16px;
+    line-height: 2;
+    text-align: justify;
+}
+
+#introduction strong {
+    color: #d4af37;
+}
+
+#introduction mark {
+    background-color: #d4af37;
+    color: #171719;
+    padding: 2px 5px;
+}
+
+figure {
+    margin: 35px auto 0;
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    border: 3px solid #d4af37;
+    border-radius: 8px;
+
+    box-shadow: 0 0 28px #d4af3733;
+}
+
+figcaption {
+    margin-top: 15px;
+    color: #d4af37;
+    font-size: 14px;
+    font-style: italic;
+}
+
+#experience {
+    padding: 40px 7%;
+}
+
+#experience h2 {
+    color: #d4af37;
+}
+
+#experience li {
+    margin: 14px 0;
+    padding: 14px 18px;
+    border-left: 3px solid #d4af37;
+    background-color: #202022;
+    color: #f3e6c8;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#experience li:hover {
+    color: #d4af37;
+}
+
+#skills {
+    padding: 40px 7%;
+}
+
+#skills table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #f3e6c8;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 8px 25px #00000055;
+}
+
+#skills th {
+    padding: 18px;
+    background-color: #d4af37;
+    color: #171719;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+    
+}
+
+#skills td {
+    padding: 17px 18px;
+    border-bottom: 1px solid #514326;
+}
+
+#skills tr:nth-child(even) {
+    background-color: #252323;
+}
+
+#skills tr:hover {
+    background-color: #39301e;
+}
+
+#skills td:last-child,
+#skills th:last-child {
+    text-align: center;
+}
+
+#projects {
+    padding: 40px 7%;
+}
+
+#projects ul {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 18px;
+    padding: 0;
+    list-style: none;
+}
+
+#projects li {
+    padding: 25px 20px;
+
+    background: linear-gradient(
+        
+        #242321,
+        #151516
+    );
+
+    color: #f3e6c8;
+    border: 1px solid #705b2a;
+    border-radius: 8px;
+    box-shadow: 0 8px 18px #00000044;
+
+    font-size: 14px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+#projects li:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+
+#video {
+    padding: 40px 7%;
+    margin-bottom: 40px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    border: 0.5px solid #0a0803;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #d4af3722;
+}
+
+.video-container iframe {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#contact {
+    padding: 40px 7%;
+}
+
+#contact form {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 28px;
+    background-color: #202022;
+    border: 1px solid #705b2a;
+    border-radius: 10px;
+}
+
+#contact label,
+#contact legend {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+#contact form > label {
+    display: block;
+    margin: 16px 0 6px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact select {
+    width: 100%;
+    padding: 13px;
+    margin: 5px 0 15px;
+    background-color: #101012;
+    border: 1px solid #705b2a;
+    border-radius: 5px;
+    color: #f8f5ee;
+    font: inherit;
+}
+
+#contact fieldset {
+    border: 1px solid #705b2a;
+    margin: 15px 0;
+    padding: 12px;
+}
+
+#contact .choice {
+    display: inline-block;
+    margin: 8px 14px 8px 0;
+}
+
+#contact button {
+    display: block;
+    margin-top: 20px;
+    padding: 13px 25px;
+    background-color: #d4af37;
+    color: #171719;
+    border: 0;
+    border-radius: 4px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #f3e6c8;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 42px 15px 30px;
+    }
+
+    header h1 {
+        font-size: 38px;
+        letter-spacing: 2px;
+    }
+
+    header h2 {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    nav {
+        gap: 12px 18px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    #introduction,
+    #experience,
+    #skills,
+    #projects,
+    #video,
+    #contact {
+        padding: 28px 6%;
+    }
+
+    #contact form {
+        padding: 18px;
+    }
+}
+

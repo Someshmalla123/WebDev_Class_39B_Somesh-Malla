@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boss Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="site">
+    <header>
      <h1>Robert Sharma</h1>
     <h2>Chief Executive Officer</h2>
+    <p class="tagline">
+        LEADERSHIP • VISION • LEGACY
+    </p>
     <nav>
     <a href="#introduction">Introduction</a> |
     <a href="#experience">Experience</a> |
     <a href="#skills">Skills</a> |
     <a href="#projects">Projects</a> |
     <a href="#video">YouTube Video</a>
-</nav>
-<hr>
+    </nav>
+    </header>
 
-<h2 id="introduction">Introduction</h2>
+<h2 id="introduction">Introduction
 
 <p>
     Robert Sharma is an experienced <strong>Chief Executive Officer</strong>
@@ -36,9 +42,10 @@
     <figcaption>I'm Leonardo di caprio look alike.</figcaption>
 
 </figure>
-<hr>
+</h2>
 
-<h2 id="experience">Experience</h2>
+
+<h2 id="experience">Experience
 
 <ol>
     <li>Chief Executive Officer - ABC Company (2020 - Present)</li>
@@ -46,11 +53,11 @@
     <li>Project Manager - Global Solutions (2012 - 2016)</li>
     <li>Business Analyst - Business World (2009 - 2012)</li>
 </ol>
-<hr>
+</h2>
 
-<h2 id="skills">Skills</h2>
+<h2 id="skills">Skills
 
-<table border="1">
+<table>
 
     <tr>
         <th>Skills</th>
@@ -78,9 +85,9 @@
     </tr>
 
 </table>
-<hr>
+</h2>
 
-<h2 id="projects">Projects</h2>
+<h2 id="projects">Projects
 
 <ul>
     <li>Company Website Development</li>
@@ -89,11 +96,64 @@
     <li>Digital Transformation Project</li>
     <li>Employee Management System</li>
 </ul>
-<h2 id="video">YouTube Video</h2>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cusQfJKn8c0?si=zn0lUz3fdJ0S3HP5" 
+</h2>
+<h2 id="video">YouTube Video
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cusQfJKn8c0" 
 title="YouTube video player" frameborder="0"
 allowfullscreen>
 </iframe>
+</div>
+</h2>
+
+<section id="contact">
+    <h2>Contact Form</h2>
+
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name"
+               name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email"
+               name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone"
+               name="phone">
+
+        <fieldset>
+            <legend>Gender</legend>
+
+            <label class="choice">
+                <input type="radio" name="gender"
+                       value="male"> Male
+            </label>
+
+            <label class="choice">
+                <input type="radio" name="gender"
+                       value="female"> Female
+            </label>
+
+            <label class="choice">
+                <input type="radio" name="gender"
+                       value="other"> Other
+            </label>
+        </fieldset>
+
+        <label for="role">Role</label>
+        <select id="role" name="role" required>
+            <option value="">Select your role</option>
+            <option value="student">Student</option>
+            <option value="developer">Developer</option>
+            <option value="business">Business professional</option>
+            <option value="other">Other</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+</div>
 </body>
 </html>
