@@ -1,5 +1,4 @@
-// Question 1 
-/*
+//Question 1
 let a = 5;
 let b = 6;
 let c = 7;
@@ -12,11 +11,10 @@ else if (b>a && b>c) {
 else {
     console.log(c + " is the greatest");
 }
-*/
 
 
-// Question 2
-/*
+
+//Question 2
 let isLoggedIn = true;
 let role = "admin";
 if ( isLoggedIn === true) {
@@ -31,11 +29,11 @@ else {
     console.log("please, Login!")
 }
 
-*/
+
 
 
 //Question 3
-/*
+
 let hour = 23;
 if (hour >=5 && hour <=7) {
     console.log("Good Morning")
@@ -46,11 +44,11 @@ else if (hour >=12 && hour <=17) {
 else  {
     console.log("Good evening")
 }
-*/
+
 
 
 //Question 4
-/*
+
 let price = 49
 let final_price = 0;
 if (price >=100) {
@@ -65,7 +63,7 @@ else {
 
 console.log(final_price);
 
-*/
+
 
 // Question 5
 let year = 2017;
